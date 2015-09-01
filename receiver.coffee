@@ -16,5 +16,11 @@ app.get '/', (request, response) ->
   response.send 'This aren\'t the droids you\'re looking for !'
 
 app.post '/', (request, response) ->
+  process.stdout.write "#{stripIpv6Prefix request.ip} > "
   request.pipe process.stdout
   response.sendStatus 200
+
+stripIpv6Prefix = (ip) ->
+  index = ip.lastIndexOf ':'
+  return ip unless index > -1
+  ip.slice index + 1
