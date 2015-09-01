@@ -13,7 +13,7 @@ console.log "send me messages to test with echo \"hello world\" | http post loca
 
 app.get '/', (request, response) ->
   response.set 'Content-Type', 'text/plain'
-  response.send "This aren't the droids you're looking for !"
+  response.send 'This aren\'t the droids you\'re looking for !'
 
 app.post '/', (request, response) ->
   request.pipe process.stdout
