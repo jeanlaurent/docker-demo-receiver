@@ -9,7 +9,7 @@
 ## play with ports
 ```
 > docker run --rm -ti -p 9000 --name receiver jeanlaurent/receiver
-> docker inspect receiver | jq '.[0].NetworkSettings.Ports."9000/tcp"[0].HostPort'
-> "32773"
+> docker inspect receiver | jq -r '.[0].NetworkSettings.Ports."9000/tcp"[0].HostPort'
+> 32773
 > echo 'I know the local port now !' | http post localhost:32773
 ```
