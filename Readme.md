@@ -2,10 +2,10 @@
 
 This starts a sample http server outputing to stdout anything which is in the body of a `post` on the root of the server.
 
-## build
+## build ...
 `docker build -t jeanlaurent/receiver .`
 
-## pull
+## ... or pull
 `docker pull jeanlaurent/receiver`
 
 ## run
