@@ -1,0 +1,16 @@
+{
+  "name": "receiver-demo",
+  "version": "1.0.0",
+  "description": "Receiver demo for docker prez",
+  "main": "receiver.coffee",
+  "author": "Jean-Laurent de Morlhon <jeanlaurent@morlhon.net>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeanlaurent/docker-demo-receiver.git"
+  },
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "express": "^4.13.3"
+  }
+}
