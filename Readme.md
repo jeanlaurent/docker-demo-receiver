@@ -1,7 +1,12 @@
 # Sample http receiver server written with express for docker demo
 
+This starts a sample http server outputing to stdout anything which is in the body of a `post` on the root of the server.
+
 ## build
 `docker build -t jeanlaurent/receiver .`
+
+## pull
+`docker pull jeanlaurent/receiver`
 
 ## run
 `docker run -ti -p 9000:9000 jeanlaurent/receiver`
